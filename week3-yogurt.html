@@ -1,0 +1,126 @@
+week3-yogurt.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🐄</title>
+  </head>
+
+  <style>
+    h1 {
+      text-align: center;
+      color: #7d51e8;
+    }
+
+    h2 {
+      font-family: times New Roman;
+      text-align: center;
+      border: #7d51e8;
+      border: 1px solid #7d51e8;
+      line-height: 50px;
+      padding: 20px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 15px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 20px;
+      margin: 20 0 10px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #7d51e8;
+      color: white;
+      font-size: 20px;
+      padding: 15px 55px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Optional: Enhance shadow on hover */
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      opacity: 0.6;
+      cursor: pointer;
+      background-color: #9773f2; /* Optional: Change color on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Optional: Enhance shadow on hover */
+    }
+
+    .container {
+      max-width: 400 px;
+      margin: 0 auto;
+      padding: 20px 60px;
+    }
+
+    .learn-more {
+      font-size: 20px;
+      color: #7d51e8;
+      text-decoration: none;
+    }
+
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>I love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://cdn-prod.medicalnewstoday.com/content/images/articles/323/323169/greek-yoghurt-in-bowl.jpg"
+        alt="greek yogurt"
+      />
+      <p>
+        Greek yogurt is a thick, creamy yogurt that can add flavor and texture
+        to foods. Other benefits of Greek yogurt include boosting bone health,
+        building muscle mass, and lowering the risk of certain health
+        conditions.
+      </p>
+
+      <a
+        href="https://www.medicalnewstoday.com/articles/323169"
+        target="blank"
+        class="learn-more"
+      >
+        Learn more</a
+      >
+
+      <button class="buy-button">Buy here 👉</button>
+
+      <footer>
+        Code by
+        <a href="https://www.delac.io/" target="_blank">Yoke yong Lee</a>
+      </footer>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name? ");
+        let email = prompt("What is your email");
+        let emoji = prompt("Which Emoji is your facourite? ");
+        alert(
+          `Thankyou ${name} we 'll be in touch!, meanwhile have a lot of yogurt! 🙈 `
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>

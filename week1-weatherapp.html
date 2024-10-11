@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather forcast</title>
+  </head>
+
+  <style>
+    body {
+      display: block;
+      text-align: center;
+
+
+    }
+
+    h1 {
+      display: block;
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+      color: #2b64d6;
+      font-size: 34px;
+      font-weight:bold;
+      line-height: 48px;
+      margin: 0cm;
+    }
+
+    h3 {
+       display: block;
+       font-size: 0.99em;
+       font-weight: bold;
+       font-family: Helvetica, Arial, sans-serif;
+       line-height: 1;
+       margin-bottom: 21px;
+
+    }
+
+    li:hover{
+       background-color: #FEFBEF;
+    }
+
+    ul {
+      margin: 30px;
+      padding: 0;
+      text-align: center;
+  
+      
+    }
+
+    li {
+      font-family: monospace;
+      font-size: 18.5px;
+      font-weight: lighter;
+      list-style: none;
+      padding: 10px 0;
+      border-radius: 15px;
+      transition: all 200ms ease-in-out;
+      display: block;
+      width: 400px;
+      margin:8px auto;
+      padding-top: 0.3em ;
+      padding-bottom: 24.5px;
+    }
+  
+
+    .top-weather {
+      color: black;
+    }
+
+    .celsius{
+      font-weight:lighter;
+      opacity:1;
+
+    }
+
+    .degree {
+      color: #565550;
+      opacity:1;
+    }
+
+    button {
+      background: #2b64d6;
+      border: 2px solid;;
+      color: #f5f0fe;
+      cursor: pointer;
+      border-radius: 10em;
+      height: 60px;;
+      width: 140px;
+      padding:0;
+      text-transform: all 200ms ease-in-out;
+      text-align: justify; 
+      text-align: center;
+      font-display:unset;
+      font-size: 16px;
+      font-display:center;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    }
+
+    button:hover {
+      background: white;
+      border-color:#2b64d6;
+      color: #2b64d6;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.7;
+      text-align: center;
+      font-family: monospace;
+      
+    }
+
+   
+  </style>
+
+  <body>
+  <h1>
+      🌤<br />Currently 21&deg; in Tokyo<br />
+      <div class="top-weather">
+      <span class="celsius">13&deg;&nbsp;/&nbsp;<strong>23&deg;</strong></span>
+  </h1>
+
+    <ul>
+      <li>
+        <h3>🌧Tomorrow</h3>
+        <span class="degree">10&deg; /  <strong>22&deg;</strong></span>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <span class="degree">15&deg; /  <strong>17&deg;</strong></span>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3><span class="degree">25&deg; /  <strong>28&deg;</strong></span>
+      </li>
+    </ul>
+
+    <button>Change city</button>
+
+    <p>Code by Yoke yong Lee</p>
+  </body>
+</html>

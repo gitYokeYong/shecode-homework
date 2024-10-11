@@ -1,0 +1,155 @@
+week2-Javascript.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SheCodes</title>
+    <style>
+      body {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+      }
+      section {
+        margin: 120px 0;
+      }
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+      h1 {
+        color: #272044;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #885df1;
+        padding: 0 0 24px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        text-align: center;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #885df1;
+        color: #885df1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <script>
+          /*let hometown = prompt("Where are you from?");
+          alert("You are from " + hometown);
+
+          let firstName = prompt("What is your first name?");
+          let lastName = prompt("what is your last name?");
+          let fullName = firstName + " " + lastName;
+          alert(" Your name is " + fullName);
+
+          let age = prompt("How old are you");
+
+          if (age >= 18) {
+            alert("You are welcome to apply Shecodes!");
+          }
+
+          if (age <= 18) {
+            alert("You are not allow to apply Shecodes!");
+          }
+
+          let time = prompt("What is the time? ");
+          if (time < 12) {
+            alert(" Good Morning!");
+          } else if (time >= 12 && time <= 18) {
+            alert("Good afternoon!");
+          } else {
+            alert("Good Evening =)");
+          }*/
+
+          /*function askForCountry() {
+            let country = prompt("Which Country are you from ?");
+            country = country.toLowerCase(); // Normalize input to lowercase for comparison
+            country = country.trim();
+            country = country.replace("brasil,brazil");
+
+            if (country === "brazil" || country === "portugal") {
+              alert("Wow You can speak Portuguese 🇵🇹! ");
+            } else {
+              alert("You really should learn Portuguese 🌚 ");
+            }
+          }
+
+          askForCountry();
+
+          function sayHi() {
+            alert("Hi");
+
+            let element = document.querySelector("#city");
+            element.addEventListener("click", sayHi);
+
+          function contactUs() {
+
+          let name = prompt("What is your first name?");
+          let email = prompt("What is your email");
+
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "<em>Thank you</em>  " + name + ",  we'll be in touch!";
+        }
+
+          let contactButton = document.querySelector("button");
+          contactButton.addEventListener("click", contactUs);
+      </script>
+
+      <h1>👩‍💻 She Codes is a Coding Workshop for Women</h1>
+      <h2>Access a new career in Technology</h2>
+      <p>
+        She Codes teaches coding, design and management skills to women
+        <br />
+        <strong> Limited amount of spots! </strong>
+      </p>
+      <br />
+      <button>Apply Now</button>
+    </section>
+    <script>
+      function apply() {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("What is your age");
+        let heading = document.querySelector("h1");
+        age = parseInt(age, 10); // Ensure age is an Integer
+
+        if (age >= 18) {
+          heading.innerHTML =
+            "<em>Hi </em>" + firstName + " , Welcome to join SheCodes! 👩‍💻";
+        } else {
+          heading.innerHTML =
+            "<em>Sorry!  </em>" + firstName + " , You can't join SheCodes!";
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
+@mabzitababy001
